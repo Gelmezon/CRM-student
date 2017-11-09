@@ -31,7 +31,7 @@ public class StudentController {
            Student student = studentService.findById(id);
             return Response.ok(student);
         } catch (Exception e) {
-            return Response.fail(e.getMessage() );
+            return Response.fail(e.getMessage());
         }
     }
 

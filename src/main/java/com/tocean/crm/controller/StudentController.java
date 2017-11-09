@@ -27,8 +27,8 @@ public class StudentController {
     @GetMapping(value="/api/profile")
     public Response profile(HttpServletRequest request){
         try{
-            String loginName = request.getHeader("userId");
-           Student student = studentService.findByLoginName(loginName);
+            String id = request.getHeader("id");
+           Student student = studentService.findById(id);
             return Response.ok(student);
         } catch (Exception e) {
             return Response.fail(e.getMessage());

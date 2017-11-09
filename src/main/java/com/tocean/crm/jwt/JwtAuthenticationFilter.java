@@ -36,7 +36,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
             ObjectMapper mapper = new ObjectMapper();
 
-            Response resp =Response.fail("invalid token!");
+            Response resp =Response.fail("invalid token!" );
             httpResponse.getWriter().write(mapper.writeValueAsString(resp));
             return;
         }

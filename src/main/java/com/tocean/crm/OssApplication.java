@@ -23,6 +23,7 @@ import org.springframework.context.annotation.Bean;
 public class OssApplication {
 
     public static void main(String[] args) {
+
         SpringApplication.run(OssApplication.class, args);
     }
 
